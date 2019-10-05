@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void regist_click(View view) {
         et_username.setText(et_password.getText().toString());
-        Intent it_navToFull = new Intent(this, FullscreenActivity.class);
+        Intent it_navToFull = new Intent(this, SwipeDownToRefreshListView.class);
         it_navToFull.putExtra("name", et_username.getText().toString().trim());
         it_navToFull.putExtra("password", et_password.getText().toString().trim());
         startActivity(it_navToFull);
